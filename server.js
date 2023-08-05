@@ -7,7 +7,7 @@ const MongoClient = require('mongodb').MongoClient
 
 
 
-const uri = "replace with link to server";
+const uri = "mongodb+srv://tristenseng:D%40ll%40s214%21@cluster-rw.z3qedjw.mongodb.net/?retryWrites=true&w=majority";
 
 MongoClient.connect(uri)
     .then(
