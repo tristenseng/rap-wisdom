@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Quotes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="super-container">
+        <div class="container">
+            <h1>star wars quotes</h1>
+        </div>
+
+        <div class="container">
+            <h2>add quote</h2>
+            <form id="quote-submit-box" action="/quotes" method="POST">
+                <input type="text" placeholder="name" name="name">
+                <textarea rows="2" type="text" placeholder="quote" name="quote"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+            <div class="container">
+            <div>
+                <button id="update-button">Replace Yoda's quote</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <button id="delete-button">Delete Vader's quote</button>
+        </div>
+
+
+        <div class="container">
+            <span>quotes</span>
+
+            <ul class="quotes">
+                <% for(let i = 0; i < quotes.length; i++) {%>
+                <li class="quote">
+                    <span><%= quotes[i].name %>:</span>
+                    <span> "<%= quotes[i].quote %>"</span>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+
+
+        <div id="message"></div>
+    </div>
+
+
+    <script src="/main.js"></script>
+
+</body>
+</html>

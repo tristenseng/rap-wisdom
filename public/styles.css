@@ -1,0 +1,68 @@
+@font-face {
+
+}
+
+body {
+
+}
+
+.super-container {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.container {
+    border-radius: 10px;
+    box-shadow: 2px 2px grey;
+    padding: 10px;
+    margin: 8px;
+    background-color: white;
+    max-width: 350px;
+}
+
+h1, h2, .container > span {
+    font-family: "starWars";
+    text-align: center;
+}
+
+.container > span {
+    display: block;
+    font-size: 24px;
+}
+
+#quote-submit-box {
+    display: flex;
+    flex-direction: column;
+}
+
+#quote-submit-box > * {
+    margin: 4px auto;
+    width: 80%;
+    max-width: 300px;
+}
+
+#quote-submit-box input {
+    width: 40%;
+    max-width: 150px;
+}
+
+#quote-submit-box button {
+    border-radius: 10px;
+    max-width: 75px;
+}
+
+.quotes {
+}
+
+.quote {
+    display: block;
+    list-style: none;
+    padding: 5px;
+}
+
+#update-button, #delete-button {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
