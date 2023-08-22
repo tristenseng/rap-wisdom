@@ -17,16 +17,17 @@ body {
     padding: 10px;
     margin: 8px;
     background-color: white;
-    max-width: 350px;
+    max-width: 500px;
 }
 
 h1, h2, .container > span {
-    font-family: "starWars";
     text-align: center;
+    font-size: 250%;
 }
 
 .container > span {
     display: block;
+    font-weight: bolder;
     font-size: 24px;
 }
 

@@ -16,15 +16,15 @@
         <div class="container">
             <h2>Add Quote</h2>
             <form id="quote-submit-box" action="/quotes" method="POST">
-                <input type="text" placeholder="name" name="name">
-                <textarea rows="2" type="text" placeholder="quote" name="quote"></textarea>
+                <input type="text" placeholder="rapper-name" name="name">
+                <textarea rows="2" type="text" placeholder="lyrics" name="quote"></textarea>
                 <button type="submit">Submit</button>
             </form>
         </div>
 
 
         <div class="container">
-            <span>quotes</span>
+            <span>Quotes</span>
 
             <ul class="quotes">
                 <% for(let i = 0; i < quotes.length; i++) {%>
